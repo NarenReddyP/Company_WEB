@@ -575,7 +575,7 @@ unset($_SESSION['fail']);
          <input type="password" name="password" placeholder="Password">
        </div>
        <div class="text-end">
-       <a href="forgotPassword.php" class='btn m-1 text-primary' style="background:transparent;color:#7F167F;font-weght:15px;text-decoration:none;">Forgot Password ?</a>
+       <a href="forgotPassword.php" class='btn m-1 text-primary' style="background:transparent;color:#7F167F;font-size:12px;text-decoration:none;">Forgot Password ?</a>
        </div>
        <input type="submit" name="SUBMITsIN" value="login" class="btn solid">
 
