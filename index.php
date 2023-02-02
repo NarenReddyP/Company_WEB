@@ -48,10 +48,10 @@ if(isset($_POST['Usubmitdata'])){
      $sql1 = "INSERT INTO `users_information` (`UserName`, `Email`,`Mobile`, `CompanyName`, `User_Msg`,`Date`) VALUES ('$UserName', '$UEmail','$UMobile', '$UCompany', '$Utext', now())";
    if(mysqli_query($conn1, $sql1)) {
      echo '<div class="alert alert-success alert-dismissable" id="flash-msg">
-   <h4 style="color:#439A97;background-image: linear-gradient(to bottom right, #810CA8, #CB1C8D);width: 51.8%;"><i class="icon fa fa-check"></i>Your data submited successfully</h4>
+   <h4></i>Your data submited successfully</h4>
    </div>';
 
-   
+
    #header("location: /PHP_WORK/CompleteWeb/GlassLoginform/logandreg.php");
    #exit();
    } else {

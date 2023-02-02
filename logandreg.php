@@ -28,7 +28,7 @@ $hashpassword = md5($_POST['cpassword']);
  $res      = mysqli_query($conn,$rows);
 
 if (!preg_match("/^[a-zA-Z ]+$/",$UserName)) {
-$name_error = "**Name must contain only alphabets and space**";
+$name_error = "<strong>**Name must contain only alphabets and space**</strong>";
 }
 else if(mysqli_num_rows($res) > 0){
   $row = mysqli_fetch_assoc($res);
@@ -38,16 +38,16 @@ else if(mysqli_num_rows($res) > 0){
   }
 }
 else if(!filter_var($Email,FILTER_VALIDATE_EMAIL)) {
-$email_error = "**Please Enter Valid Email ID**";
+$email_error = "<strong>**Please Enter Valid Email ID**</strong>";
 }
 else if(strlen($Password) < 6) {
-$password_error = "**Password must be minimum of 6 characters**";
+$password_error = "<strong>**Password must be minimum of 6 characters**</strong>";
 }
 else if(strlen($mobile) < 10) {
-$mobile_error = "**Mobile number must be minimum of 10 characters**";
+$mobile_error = "<strong>**Mobile number must be minimum of 10 characters**</strong>";
 }
 else if($Password != $Cpassword) {
-$cpassword_error = "**Password and Confirm Password doesn't match**";
+$cpassword_error = "<strong>**Password and Confirm Password doesn't match**</strong>";
 }
 #$error = $name_error = $email_error = $password_error = $mobile_error = $cpassword_error;
 
